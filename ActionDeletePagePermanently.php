@@ -22,7 +22,8 @@ class ActionDeletePagePermanently extends FormAction {
 				$links['actions']['delete_page_permanently'] = [
 					'class' => ( $action === 'delete_page_permanently' ) ? 'selected' : false,
 					'text' => $sktemplate->msg( 'deletepagesforgood-delete_permanently' )->text(),
-					'href' => $title->getLocalUrl( 'action=delete_page_permanently' )
+					'href' => $title->getLocalUrl( 'action=delete_page_permanently' ),
+				        'icon'  => 'close'
 				];
 			}
 		}
