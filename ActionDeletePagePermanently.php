@@ -254,7 +254,7 @@ class ActionDeletePagePermanently extends FormAction {
 
 		/*
 		 * If the article belongs to a category, update category counts
-		 */
+		 -- Commented out due to lack of need 
 		if ( !empty( $cats ) ) {
 			foreach ( $cats as $parentcat => $currentarticle ) {
 				$catname = preg_split( '/:/', $parentcat, 2 );
@@ -265,7 +265,7 @@ class ActionDeletePagePermanently extends FormAction {
 					DeferredUpdates::addCallableUpdate( [ $cat, 'refreshCounts' ] );
 				}
 			}
-		}
+		} */
 
 		/*
 		 * If an image is being deleted, some extra work needs to be done
