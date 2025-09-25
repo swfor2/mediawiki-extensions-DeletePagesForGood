@@ -28,6 +28,7 @@ class ActionDeletePagePermanently extends FormAction {
 			if ( self::canDeleteTitle( $title ) ) {
 				$links['actions']['delete_page_permanently'] = [
 					'class' => ( $action === 'delete_page_permanently' ) ? 'selected' : false,
+					'icon' => 'restore',
 					'text' => $sktemplate->msg( 'deletepagesforgood-delete_permanently' )->text(),
 					'href' => $title->getLocalUrl( 'action=delete_page_permanently' )
 				];
