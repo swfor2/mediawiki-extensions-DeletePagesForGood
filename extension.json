@@ -40,7 +40,7 @@
 		]
 	},
 	"Hooks": {
-		"SkinTemplateNavigation::Universal": "ActionDeletePagePermanently::onAddSkinHook"
+		"SkinTemplateNavigation::Universal": "ActionDeletePagePermanently::onSkinTemplateNavigationUniversal"
 	},
 	"AutoloadClasses": {
 		"ActionDeletePagePermanently": "ActionDeletePagePermanently.php"
